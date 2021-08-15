@@ -13,8 +13,14 @@ app.use(
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
 const storeItems = new Map([
-  [1, { priceInCents: 100, name: "YuTing Tesla" }],
-  [2, { priceInCents: 30000, name: "Learn CSS Today" }],
+  ['1', { priceInCents: 11, name: "Red" }],
+  ['2', { priceInCents: 12, name: "Yellow" }],
+  ['3', { priceInCents: 13, name: "Blue" }],
+  ['4', { priceInCents: 14, name: "Orange" }],
+  ['5', { priceInCents: 15, name: "Green" }],
+  ['6', { priceInCents: 16, name: "Purple" }],
+  ['7', { priceInCents: 17, name: "Gray" }],
+  ['8', { priceInCents: 18, name: "Black" }],
 ])
 
 app.post("/create-checkout-session", async (req, res) => {
@@ -30,7 +36,7 @@ app.post("/create-checkout-session", async (req, res) => {
             product_data: {
               name: storeItem.name,
             },
-            unit_amount: storeItem.priceInCents,
+            unit_amount: storeItem.priceInCents * 100,
           },
           quantity: item.quantity,
         }

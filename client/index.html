@@ -7,16 +7,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<i class="fa fa-car"> YuTing Tesla - $100</i>
-<select>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-</select>
 <body>
-  <button>Checkout</button>
+<i class="fa fa-shopping-cart fa-2x"><div class="count">0</div></i>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="container">
+      
+    </div>
+    -----------------------------<br>
+    <div class="row">Total：</div><div class="total row"></div><br>
+    <button class="checkout">Checkout</button>
+    <button class="cancel">Clear Cart</button>
+  </div>
+</div>
+
+<h1>YuTing Store</h1>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="color" style="background-color: red;"></div>
+    <div class="grid-container-inside">
+        <div class="name">Red</div>
+        <div class="price">$ 11</div>
+        <button class="grid-item-inside addToCart" value="1">Add To Cart</button>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="color" style="background-color: yellow;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Yellow</div>
+      <div class="price">$ 12</div>
+      <button class="grid-item-inside addToCart" value="2">Add To Cart</button>
+    </div></div>
+  <div class="grid-item">
+    <div class="color" style="background-color: blue;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Blue</div>
+      <div class="price">$ 13</div>
+      <button class="grid-item-inside addToCart" value="3">Add To Cart</button>
+  </div></div>  
+  <div class="grid-item">
+    <div class="color" style="background-color: orange;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Orange</div>
+      <div class="price">$ 14</div>
+      <button class="grid-item-inside addToCart" value="4">Add To Cart</button>
+  </div></div>
+  <div class="grid-item">
+    <div class="color" style="background-color: green;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Green</div>
+      <div class="price">$ 15</div>
+      <button class="grid-item-inside addToCart" value="5">Add To Cart</button>
+  </div></div>
+  <div class="grid-item">
+    <div class="color" style="background-color: purple;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Purple</div>
+      <div class="price">$ 16</div>
+      <button class="grid-item-inside addToCart" value="6">Add To Cart</button>
+  </div></div>  
+  <div class="grid-item">
+    <div class="color" style="background-color: gray;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Gray</div>
+      <div class="price">$ 17</div>
+      <button class="grid-item-inside addToCart" value="7">Add To Cart</button>
+  </div></div>
+  <div class="grid-item">
+    <div class="color" style="background-color: black;"></div>
+    <div class="grid-container-inside">
+      <div class="name">Black</div>
+      <div class="price">$ 18</div>
+      <button class="grid-item-inside addToCart" value="8">Add To Cart</button>
+  </div></div> 
+</div>
 </body>
 </html>
